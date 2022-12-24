@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>TM SPORT SWAHILI</title>
+   <link  rel="stylesheet" type="text/css" href="style.css">
+   <meta name="viewport" content="width=device-width, initial scale=1>"
+   
+</head>
+<body>
+    <section id="banner">
+    <img src="images/logo.jpg" class="logo">
+    <div class="banner-text">
+        <h1>TM SPORT SWAHILI</h1>
+        <P>Habari zote za michezo</P>
+    </div>
+    </section>
+    <div  id="sideNav">
+        <nav>
+          <ul>
+             <li><a href="banner">HOME</a></li> 
+             <li><a href="feature">FEATURES</a></li>
+             <li><a href="service">LIST</a></li>
+             <li><a href="footer">CONTACT US</a></li>
+          </ul>
+        </nav>
+    </div>
+    <div  id="menuBtn">
+        <img src="images/menu.png" id="menu">
+    </div>
+    
+    <! --features-->
+    
+    <section id="feature">
+      <div class="title-text">
+          <p>FEATURES</p>
+          <h2>Why choose us</h2>
+      </div>
+    </section>
+    <div class="feature-box">
+        <div class="feature">
+            <h3>Experienced Staff</h3>
+            <div class="features-desc">
+                <div class="features-icon">
+                    <i class="fa fa-shield"></i>
+                </div>
+                <div class="features-text"></div>
+                <p>Best sports asseccors from Tanzania who brings you everything you need to know about sports. </p>
+            </div>
+              <h3>Clear source of information</h3>
+            <div class="features-desc">
+                <div class="features-icon">
+                    <i class="fa fa-check-square-o"></i>
+                </div>
+                <div class="features-text"></div>
+                <p>We offer clear information about all kimds of sports across the World. </p>
+            </div>
+              <h3>24Hr working</h3>
+            <div class="features-desc">
+                <div class="features-icon">
+                    <i class="fa fa-inr"></i>
+                </div>
+                <div class="features-text"></div>
+                <p>Best sports asseccors working for 24/7 services </p>
+            </div>
+        </div>
+        <div class="features-img">
+            <img src="images/staff.jpg">
+        </div>
+    </div>
+    
+        
+        
+        <!---footer--->
+        <section id="footer">
+         <div class="title-text">
+          <p>CONTACT US</p>
+          <h2>You can contact us</h2>
+          </div>
+         <div class="footer-row">
+            <div class="footer-left">
+                <h>WE LISTEN YOU</h>
+                <hr>
+                <p>MWANZA,TANZANIA</p>
+                <p><a href="+255746971597">+255746971597</a></p>
+                <p><b><a href="+255719052987">+255719052987</a></b></p>
+            </div> 
+            <div class="footer-right">
+                <h>SEND US</h>
+                <hr>
+            <p><i><b><a href="matikokasmil24@gmail.com">matikokasmil24@gmail.com</a></b></i></p>
+            <p><i class="fa fa-twitter"></i><i><b><a href="www.twitter.com/@tm_swahili">@tm_swahili</a></b></i></p>
+            </di>
+         </div>
+            
+        </section>
+        
+ <script>
+     var menuBtn = document.getElementById("menuBtn")
+     var sideNav = document.getElementById("sideNav")
+     var menu = document.getElementById("menu")
+     sideNav.style.right = "-250px";
+     
+     menuBtn.onclick = function(){
+         if(sideNav.style.right=="-250px"){
+             sideNav.style.right="0";
+             menu.src = "images/close.png"
+         }
+         else{sideNav.style.right="-250px"
+         menu.src = "images/close.png"
+         }
+     }
+     var scroll = new SmoothScroll('a[href*="#"]', { speed: 1000, speedAsDuration: true
+});
+ </script>
+
+</body>
+</html>
